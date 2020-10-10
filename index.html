@@ -149,36 +149,12 @@
                 <img src="./img/home.svg">
                 /startpage
                 <img src="./img//straight-right-arrow.svg"> d
-                <input type="search" placeholder="Enter keywords" name="q" autofocus>
+                <input type="search" placeholder="Enter keywords" name="q" autofocus autocomplete="off">
             </form>
         </p>
     </div>
 
 </body>
-<script>
-    function currentTime() {
-        var date = new Date();
-        var hour = date.getHours();
-        var min = date.getMinutes();
-        var sec = date.getSeconds();
-        hour = updateTime(hour);
-        min = updateTime(min);
-        sec = updateTime(sec);
-        document.querySelector(".clock").innerHTML = hour + ":" + min + ":" + sec;
-        var t = setTimeout(function () {
-            currentTime()
-        }, 1000);
-    }
-
-    function updateTime(k) {
-        if (k < 10) {
-            return "0" + k;
-        } else {
-            return k;
-        }
-    }
-
-    currentTime();
-</script>
+<script src="./index.js"></script>
 
 </html>
